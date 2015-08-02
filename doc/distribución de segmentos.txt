@@ -17,15 +17,22 @@ Address:
 	8 -> derecha abajo (c)
 	10 -> derecha arriba (b)
 	12 -> arriba (a)
-	
-Address: 6,	bit1: simbolo <<
+
+Address: 2,	bit1: simbolo ch	
+Address: 4,	bit0: simbolo time
+Address: 4,	bit1: simbolo >>
 Address: 6,	bit0: simbolo REC
-Address: 8,	bit1: simbolo ||
-Address: 10, bit2: simbolo HDD
+Address: 6,	bit1: simbolo << (?)
+Address: 8,	bit0: simbolo :
+Address: 8,	bit1: simbolo || (?)
+Address: 10, bit0: nada
+Address: 10, bit1: simbolo HDD
+Address: 12, bit0: simbolo shift
+Address: 12, bit1: simbolo dtv
 
 Direcciones impares
 --------------------
-- bit7: digito6
+- bit0: digito6
 
 
 Numeros y direcciones

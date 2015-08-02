@@ -3,13 +3,6 @@
 #include "keys_reaction.h"
 
 
-#ifdef _MSC_VER
-#define USE_RS232 0 
-#include "ccs/rs232.h"
-#else
-//#use rs232( baud=19200, parity=N, xmit=PIN_C6, rcv=PIN_C7, bits=8, DISABLE_INTS )
-#endif
-
 void init() {
     setup_adc_ports(NO_ANALOGS);
     setup_adc(ADC_OFF);
@@ -52,18 +45,22 @@ int32 apply_keys( int key, int32 counter ) {
 
 void main_loop() {
     bool keys[UI_KEYS_SIZE];
-    int key;
+    struct KeysState keys_state;
     int32 counter = 0;
     
     ui_print(counter);
     while (TRUE) {
         ui_read_keys(keys);
         
-        key = keys_update_state(keys);
+        keys_update_state(keys, &keys_state);
         
-        counter = apply_keys( key, counter );
-
-        ui_print( counter );
+        counter = apply_keys( keys_state.key_pressed, counter );
+        
+        ui_set_digits( counter );
+        ui_display_data.fastfordwad = (keys_state.key_pressed>=3) && keys_state.fast_apply;
+        ui_display_data.rewind = (keys_state.key_pressed<3) && (keys_state.key_pressed>=0) 
+                                    && keys_state.fast_apply;
+        ui_print(); 
     }
 }
 
