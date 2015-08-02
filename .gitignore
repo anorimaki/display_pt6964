@@ -1,0 +1,4 @@
+/piccode/build/*
+**/__history/*
+/mpl/display_pt6964.X/*
+!/mpl/display_pt6964.X/nbproject
