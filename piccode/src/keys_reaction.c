@@ -16,6 +16,7 @@
 static struct {
 	int key_pressed;
 	int key_pressed_counter;
+    int key_released_counter;
 	bool fast_apply;
 } keys_state;
 
@@ -45,18 +46,26 @@ void keys_init(int16 ms_to_fast_apply, int k_size) {
 
 
 int keys_update_state( bool keys[] ) {
-	if ( (keys_state.key_pressed!=KEYS_NO_KEY) && keys[keys_state.key_pressed] ) {
-		if ( keys_state.key_pressed_counter <= KEYS_MIN_COUNTER_TO_APPLY ) {
-			++keys_state.key_pressed_counter;
-		}
-		if ( keys_state.key_pressed_counter == KEYS_MIN_COUNTER_TO_APPLY) {
-			keys_enable_fastapply_counter();
-			return keys_state.key_pressed;
-		}
-		if ( keys_state.fast_apply ) {
-			return keys_state.key_pressed;
-		}
-		return KEYS_NO_KEY;
+	if ( keys_state.key_pressed!=KEYS_NO_KEY ) {
+        if ( keys[keys_state.key_pressed] ) {
+            if ( keys_state.key_pressed_counter <= KEYS_MIN_COUNTER_TO_APPLY ) {
+                ++keys_state.key_pressed_counter;
+            }
+            if ( keys_state.key_pressed_counter == KEYS_MIN_COUNTER_TO_APPLY) {
+                keys_enable_fastapply_counter();
+                return keys_state.key_pressed;
+            }
+            if ( keys_state.fast_apply ) {
+                keys_state.key_released_counter = 0;
+                return keys_state.key_pressed;
+            }
+            return KEYS_NO_KEY;
+        }
+        if ( keys_state.fast_apply ) {
+            if ( ++keys_state.key_released_counter < KEYS_MIN_COUNTER_TO_APPLY ) {
+                return keys_state.key_pressed;
+            }
+        }
 	}
 	
 	keys_state.key_pressed = keys_find_pressed( keys );
