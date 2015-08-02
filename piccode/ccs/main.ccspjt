@@ -1,0 +1,236 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC18F2550
+CCSVerions=5.048
+Compiler=PCH
+CCSVersion=5.048
+Development_Mode=
+ToolSuite=CCS
+[Target Data]
+FileList=..\src\main.c
+BuildTool=C-COMPILER
+OptionString=+FH
+AdditionalOptionString=
+BuildRequired=1
+[Directories]
+Include=<default>;..\include\;..\..\..\compilers\include\
+Library=
+LinkerScript=
+output=..\build\
+[E:\cdu\display_pt6964\piccode\ccs\main]
+Type=4
+[mru-list]
+1=..\src\main.c
+
+[ProjectLog]
+Days=6
+D1=26-07-2015
+D1_L=2
+D1_L1=[69443]Project Opened.
+D1_L2=[74020]Project Closed.
+D2=27-07-2015
+D2_L=22
+D2_L1=[73581]Project Opened.
+D2_L2=[73634]Started Editing.
+D2_L3=[73787]Project Closed.
+D2_L4=[75147]Project Opened.
+D2_L5=[75213]Project Closed.
+D2_L6=[75217]Project Opened.
+D2_L7=[75254]Project Closed.
+D2_L8=[78829]Project Opened.
+D2_L9=[78829]Project Closed.
+D2_L10=[78829]Project Opened.
+D2_L11=[78842]Project Closed.
+D2_L12=[78924]Project Opened.
+D2_L13=[78924]Project Closed.
+D2_L14=[78924]Project Opened.
+D2_L15=[79053]Project Closed.
+D2_L16=[79153]Project Opened.
+D2_L17=[79728]Started Editing.
+D2_L18=[80057]Stopped Editing.
+D2_L19=[80121]Started Editing.
+D2_L20=[80540]Stopped Editing.
+D2_L21=[80706]Started Editing.
+D2_L22=[81136]Stopped Editing.
+TotalEdit=116
+TotalDebug=0
+D3=28-07-2015
+D3_E=5
+D3_D=0
+D3_L=1
+D3_L1=[565]Project Closed.
+D4=31-07-2015
+D4_L=25
+D4_L1=[62478]Project Opened.
+D4_L2=[62478]Project Closed.
+D4_L3=[62478]Project Opened.
+D4_L4=[63004]Started Editing.
+D4_L5=[63305]Stopped Editing.
+D4_L6=[63307]Started Editing.
+D4_L7=[63866]Stopped Editing.
+D4_L8=[64391]Started Editing.
+D4_L9=[64546]Stopped Editing.
+D4_E=15
+D4_D=0
+D4_L10=[64546]Project Closed.
+D4_L11=[64555]Project Opened.
+D4_L12=[64555]Project Closed.
+D4_L13=[64556]Project Opened.
+D4_L14=[64624]Project Closed.
+D4_L15=[64666]Project Opened.
+D4_L16=[66812]Started Editing.
+D4_L17=[67281]Stopped Editing.
+D4_L18=[67968]Project Closed.
+D4_L19=[67985]Project Opened.
+D4_L20=[68114]Project Closed.
+D4_L21=[68144]Project Opened.
+D4_L22=[70640]Started Editing.
+D4_L23=[71030]Stopped Editing.
+D4_L24=[71340]Started Editing.
+D4_L25=[71644]Stopped Editing.
+D5=01-08-2015
+D5_L=48
+D5_L1=[34514]Started Editing.
+D5_L2=[35252]Stopped Editing.
+D5_L3=[35795]Started Editing.
+D5_L4=[36589]Stopped Editing.
+D5_L5=[36691]Started Editing.
+D5_L6=[37509]Stopped Editing.
+D5_L7=[37691]Started Editing.
+D5_L8=[38036]Stopped Editing.
+D5_L9=[38231]Started Editing.
+D5_L10=[39421]Stopped Editing.
+D5_E=75
+D5_D=0
+D5_L11=[39443]Started Editing.
+D5_L12=[39743]Stopped Editing.
+D5_L13=[39824]Started Editing.
+D5_L14=[40042]Stopped Editing.
+D5_L15=[40164]Started Editing.
+D5_L16=[40466]Stopped Editing.
+D5_L17=[40618]Started Editing.
+D5_L18=[40932]Stopped Editing.
+D5_L19=[42135]Started Editing.
+D5_L20=[42728]Stopped Editing.
+D5_L21=[43031]Started Editing.
+D5_L22=[43370]Stopped Editing.
+D5_L23=[45168]Started Editing.
+D5_L24=[45471]Stopped Editing.
+D5_L25=[45797]Started Editing.
+D5_L26=[46100]Stopped Editing.
+D5_L27=[48416]Started Editing.
+D5_L28=[48718]Stopped Editing.
+D5_L29=[51680]Started Editing.
+D5_L30=[52224]Stopped Editing.
+D5_L31=[52385]Started Editing.
+D5_L32=[52843]Stopped Editing.
+D5_L33=[52843]Project Closed.
+D5_L34=[52843]Project Opened.
+D5_L35=[53203]Started Editing.
+D5_L36=[53717]Stopped Editing.
+D5_L37=[55553]Started Editing.
+D5_L38=[56115]Stopped Editing.
+D5_L39=[56664]Started Editing.
+D5_L40=[57289]Stopped Editing.
+D5_L41=[59192]Started Editing.
+D5_L42=[59534]Stopped Editing.
+D5_L43=[59723]Started Editing.
+D5_L44=[60063]Stopped Editing.
+D5_L45=[60126]Started Editing.
+D5_L46=[60686]Stopped Editing.
+D5_L47=[75155]Started Editing.
+D5_L48=[75466]Stopped Editing.
+D6=02-08-2015
+D6_L=6
+D6_L1=[35225]Started Editing.
+D6_L2=[35544]Stopped Editing.
+D6_L3=[43896]Started Editing.
+D6_L4=[44197]Stopped Editing.
+D6_E=21
+D6_D=0
+D6_L5=[44698]Started Editing.
+D6_L6=[45004]Stopped Editing.
+
+[Opened Files]
+1=..\src\main.c
+t1=56
+Count=10
+2=..\src\pt6964.c
+t2=1
+3=C:\Program Files (x86)\PICC\Devices\18F2550.h
+t3=744
+4=..\include\main.h
+t4=37
+5=..\include\picconfig.h
+t5=13
+6=C:\Program Files (x86)\PICC\Drivers\stdarg.h
+t6=1
+7=..\include\pt6964.h
+t7=1
+8=..\..\..\compilers\include\ccs\compilerspecs.h
+t8=1
+9=..\..\..\compilers\include\ccs\macros.h
+t9=1
+10=..\src\ui.c
+t10=66
+[main.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+
+[defines]
+buildcount=13
+enabled=0
+chip=1
+D1=
+V1=
+
+[ExtraIncludes]
+Count=0
+1=main=e:\cdu\display_pt6964\piccode\src\main.h
+
+[fileformats]
+forcecoff=1
+debug=4
+error=2
+object=0
+list=0
+scratch=0
+sta=1
+tre=1
+expandtree=0
+allerrors=1
+allwarnings=1
+stayupne=3
+stayupoe=0
+
+[..\src\main.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+
+[CompilerVersion]
+Fixed=
+[..\buid\main.c]
+Type=4
+
+[..\src\pt6964.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+[Units]
+Count=1
+1=..\src\main
+Link=0

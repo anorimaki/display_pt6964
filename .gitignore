@@ -1,4 +1,4 @@
-/piccode/build/*
+piccode/build/
 **/__history/*
-/mpl/display_pt6964.X/*
-!/mpl/display_pt6964.X/nbproject
+piccode/mpl/display_pt6964.X/*
+!piccode/mpl/display_pt6964.X/nbproject

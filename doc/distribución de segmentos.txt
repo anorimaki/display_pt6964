@@ -1,0 +1,46 @@
+
+Direcciones pares
+------------------
+- bit7: digito5
+- bit6: ????
+- bit5: digito4
+- bit4: digito3
+- bit3: digito2
+- bit2: digito1
+- bit0 y bit1: simboles
+
+Address:
+	0 -> Palo de en medio (g)
+	2 -> izquierda arriba (f)
+	4 -> izquierda abajo (e)
+	6 -> bajo (d)
+	8 -> derecha abajo (c)
+	10 -> derecha arriba (b)
+	12 -> arriba (a)
+	
+Address: 6,	bit1: simbolo <<
+Address: 6,	bit0: simbolo REC
+Address: 8,	bit1: simbolo ||
+Address: 10, bit2: simbolo HDD
+
+Direcciones impares
+--------------------
+- bit7: digito6
+
+
+Numeros y direcciones
+------------------
+0 -> 1111110
+1 -> 0110000
+2 -> 1101101
+3 -> 1111001
+4 -> 0110011
+5 -> 1011011
+6 -> 1011111
+7 -> 1110000
+8 -> 1111111
+9 -> 1111011
+
+Switches
+---------
+K1 y K2 con KS1-KS3
